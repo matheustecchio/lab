@@ -11,8 +11,27 @@ def load_data(filename):
     
     return sets
 
+def display_data(data):
+    print("Lego Sets\n" + "-" * 80)
+    
+    
+    
+    for set in data:
+        title_gap = 46 - len(set.title)
+        pieces_gap = 10 - len(set.pieces)
+        rrp_gap = 10 - len(set.rrp)
+        
+        print(
+            set.set_id +    " "                 + 
+            set.title +     " " * title_gap     + "\t" +
+            set.pieces +    " " * pieces_gap    + 
+            set.rrp +       " " * rrp_gap       + 
+            set.stock
+            )
+
 def main():
-    pass
+    sets = load_data('data.csv')
+    display_data(sets)
 
 if __name__ == "__main__":
     main()
