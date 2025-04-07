@@ -57,8 +57,12 @@ def search_by_id(sets: list[object], pattern: str) -> None:
     for set in sets:
         if set.set_id.startswith(pattern):
             searched_sets.append(set)
+    if len(searched_sets) == 0:
+        print("\nNo sets whose code starts with " + pattern)
     
-    display_sets(searched_sets)
+    else:
+        print("\nSets whose code starts with " + pattern + "\n")
+        display_sets(searched_sets)
 
 def main():
     while True:
