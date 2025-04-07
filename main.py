@@ -1,7 +1,7 @@
 from set import Set
 import validation as valid
 
-def load_data(filename) -> list[object] | list:
+def load_data(filename: str) -> list[object]:
     sets = []
     
     with open(filename, 'r') as file:
@@ -13,10 +13,10 @@ def load_data(filename) -> list[object] | list:
     return sets
 
 
-def display_data(data) -> None:
-    print("Lego Sets\n" + "-" * 80)
+def display_sets(sets: list[object]) -> None:
+    print("\nLego Sets\n" + "-" * 80)
     
-    for set in data:
+    for set in sets:
         title_gap = 46 - len(set.title)
         pieces_gap = 10 - len(set.pieces)
         rrp_gap = 10 - len(set.rrp)
@@ -29,7 +29,7 @@ def display_data(data) -> None:
             set.stock
             )
 
-def add_data(filename, sets) -> None:
+def add_data(filename: str, sets: list[object]) -> None:
     set_id =    valid.read_lego_code("Set ID(Please enter a number with 5 to 7 digits): ")
     title =     valid.read_valid_lego_name("Title: ")
     pieces =    valid.read_integer("Pieces(10 to 5,000): ", 10, 5000)
@@ -40,32 +40,32 @@ def add_data(filename, sets) -> None:
         with open(filename, 'a') as file:
             for set in sets:
                 if set_id == set.set_id:
-                    print("Error: Set ID already exists.")
+                    print("ERROR: Set ID already exists.")
                     return
             
             file.write(f"{set_id},{title},{pieces},{rrp},{stock}\n") 
             sets.append(Set(set_id, title, pieces, rrp, stock))
     except:
-        print("Error: Unable to write to the data file.")
+        print("ERROR: Unable to write to the data file.\n")
         return
     else:
-        print("LEGO Set added successfully.")
+        print("LEGO Set added successfully.\n")
 
-def search_by_id(sets, pattern) -> None:    
+def search_by_id(sets: list[object], pattern: str) -> None:    
     searched_sets = []
     
     for set in sets:
         if set.set_id.startswith(pattern):
             searched_sets.append(set)
     
-    display_data(searched_sets)
+    display_sets(searched_sets)
 
 def main():
     while True:
         try: 
             sets = load_data('data.csv')
         except FileNotFoundError:
-            print("Error: Data file not found.")
+            print("ERROR: Data file not found.")
             exit(1)
 
         print("Lego Set Inventory Menu")
@@ -80,7 +80,7 @@ def main():
         choice = int(input("Enter your choice: "))
 
         if choice == 1:
-            display_data(sets)
+            display_sets(sets)
         if choice == 2:
             add_data('data.csv', sets)
         if choice == 3:
