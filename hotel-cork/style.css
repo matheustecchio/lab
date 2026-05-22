@@ -1,0 +1,176 @@
+body {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f6f4f1;
+}
+
+/*header section*/
+#header-brand {
+    align-items: center;
+    gap: 1rem;
+}
+
+#brand-name {
+    font-size: 3rem;
+    color: #5b5247;
+    margin: 0;
+}
+
+#header-brand > span {
+    font-size: 3rem;
+    color: #5b5247;
+}
+
+#brand-motto {
+    font-size: 1.4rem;
+    color: #5b5247;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#header-main {
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-navbar {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+#navbar-nav {
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.nav-link {
+    padding:0.2rem;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: #af9d81;
+    border-radius: 10px;
+}
+
+/*image section*/
+#hotel-cork-image > img{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+#hotel-cork-image {
+    position: relative;
+}
+
+#image-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(91, 82, 71, 0.7);
+}
+
+#book-btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -20vh;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#book-btn > a {
+    color: #5b5247;
+    background-color: #f6f4f1;
+    border: #5b5247 solid 2px;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+
+#book-btn > a:hover {
+    color: #f6f4f1;
+    background-color: #5b5247;
+    border: #f6f4f1 solid 2px;
+    border-radius: 50px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/*select room Section*/
+#select-room-title > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5b5247;
+    margin: 2.5rem 2.5rem 3rem;
+    text-transform: uppercase;
+}
+
+.button {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    background-color: #f6f4f1;
+    color: #5b5247;
+    border: #5b5247 solid 2px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #5b5247;
+    color: #f6f4f1;
+    border: #5b5247 solid 2px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button:active {
+    background-color: #5b5247;
+    color: #f6f4f1;
+    border: #5b5247 solid 2px;
+}
+
+/*footer section*/
+footer {
+    padding: 2rem 2rem 0.5rem;
+}
+
+/*Media Queries*/
+@media (max-width: 1236px) {
+    #header-main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    #brand-name, #brand-motto {
+        font-size: 1.3rem;
+    }
+    #header-navbar {
+        font-size: 1.1rem;
+    }
+
+    #book-btn {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

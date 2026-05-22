@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Hotel Cork</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div id="header-main"  class="d-flex flex-grow-1">
+                    <div id="header-brand" class="d-flex flex-row">
+                        <a id="brand-name" class="navbar-brand" href="#">Hotel Cork</a>
+                        <span>|</span>
+                        <p id="brand-motto">Hospitality, Kindness and Comfort</p>
+                    </div>
+                    <div id="header-navbar">
+                        <ul id="navbar-nav" class="navbar">
+                            <li class="nav-item navbar nav-link">
+                                <a class="nav-link" href="#">Rooms</a>
+                            </li>
+                            <li class="nav-item nav-link">
+                                <a class="nav-link" href="#">Images</a>
+                            </li>
+                            <li class="nav-item nav-link">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="hotel-cork-image">
+            <img src="assets/hotel-cork.jpg" alt="image of Hotel Cork">
+            <div id="image-block"></div>
+            <div id ="book-btn" class="container">
+                <a href="#select-room-title">Book Now</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="select-room-title">
+            <h2>Select Your Room</h2>
+        </div>
+        <div id="select-room-container" class="container-fluid d-flex flex-wrap gap-3 justify-content-around">
+            <div class="card mb-3 col-sm-12 col-md-12 col-lg-3">
+              <img src="assets/singleroom.jpg" class="card-img-top" alt="Image of our single room">
+              <div class="card-body">
+                <h5 class="card-title">Single</h5>
+                <p class="card-text">Spacious and comfortable, ideal for singles.</p>
+              </div>
+                <button type="button" class="button btn-primary">Book Now</button>
+            </div>
+            <div class="card mb-3 col-sm-12 col-md-12 col-lg-3">
+              <img src="assets/doubleroom.jpg" class="card-img-top" alt="Image of our double room">
+              <div class="card-body">
+                <h5 class="card-title">Double</h5>
+                <p class="card-text">Enjoy a relaxing and comfortable stay with your partner.</p>
+              </div>
+                <button type="button" class="button btn-primary">Book Now</button>
+            </div>
+            <div class="card mb-3 col-sm-12 col-md-12 col-lg-3">
+              <img src="assets/familyroom.jpg" class="card-img-top" alt="Image of our family room">
+              <div class="card-body">
+                <h5 class="card-title">Family</h5>
+                <p class="card-text">Indulge in luxury and comfort, perfect for families.</p>
+              </div>
+                <button type="button" class="button btn-primary">Book Now</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-text">
+            <hr>
+            <p>Hotel Cork is a fictional company based in Cork, Ireland. It doesn't exist in real life, and it's part
+            of a College Assigment!</p>
+            <p>Have a look at the <a href="https://github.com/matheustecchio/hotel-cork">repository</a>
+                for more relevant information.</p>
+            <p>Copyright &copy; 2024 <a href="https://github.com/matheustecchio">Matheus Tecchio</a>.
+        </div>
+    </footer>
+</body>
+</html>
