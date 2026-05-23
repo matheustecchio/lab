@@ -1,0 +1,399 @@
+body {
+    background-color: #e6f4f1;
+    margin: 0;
+    color: #005c7c;
+    font-family: monospace, sans-serif;
+}
+
+h1 {
+    font-family: "Press Start 2P", monospace, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #005c7c;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-pages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    border-bottom: #fcfcd4 2px dashed;
+}
+
+.nav-pages a {
+    font-family: "Press Start 2P", monospace, sans-serif;
+    color: #fcfcd4;
+    text-decoration: none;
+    padding: 1em 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-pages a:hover {
+    background-color: #00ccdd;
+    color: #005c7c;
+}
+
+/* Hidden Bar */
+#hidden-bar {
+    display: none;
+    background-color: #005c7c;
+    padding: 1em;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+#hidden-bar a {
+    font-family: "Press Start 2P", monospace, sans-serif;
+    color: #fcfcd4;
+    text-decoration: none;
+    padding: 1em 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#hidden-bar a:hover {
+    background-color: #00ccdd;
+    color: #005c7c;
+}
+
+/* Navigation Icons */
+.nav-icon img{
+    display: inline;
+    padding: 10px;
+    width: 4em;
+    height: 4em;
+}
+
+.nav-mtu img {
+    display: inline;
+    width: 5em;
+    height: 5em;
+    border-radius: 15%;
+}
+
+#nav-menu img{
+    display: inline;
+    padding: 10px;
+    width: 4em;
+    height: 4em;
+}
+
+#nav-menu {
+    background-color: #005c7c;
+    border: none;
+    border-radius: 10px;
+}
+
+#nav-menu:hover {
+    background-color: #00ccdd;
+}
+
+/* Footer */
+footer {
+    background-color: #005c7c;
+    color: #fcfcd4;
+    padding: 0.5em 1em 0.1em 0;
+    text-align: right;
+    border-top: #fcfcd4 2px dashed;
+    font-family: "Press Start 2P", monospace, sans-serif;
+    margin-top: 1.5rem;
+}
+
+/* Main styles */
+main {
+    margin: 1rem;
+}
+
+/* Welcome styles */
+.welcome {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.welcome > h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.welcome > h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.welcome > h1,h2,h3,a {
+    font-family: "Press Start 2P", monospace, sans-serif;
+}
+
+/* 2-Column Main Section */
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#container > aside {
+    flex: 1;
+    flex-basis: 15%;
+}
+
+#container > section {
+    flex-basis: 75%;
+    flex: 3;
+}
+
+/* Section Main styles */
+
+main > div > section > p {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+/* Gallery styles (video and image) */
+.gallery {
+    display: flex;
+    justify-content:  center;
+    flex-wrap: wrap;
+}
+.gallery > * {
+    width: 500px;
+    height: 300px;
+    padding: 1rem;
+}
+
+/* Join Button */
+main > div > section > .join-button {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 0.5em;
+}
+
+main > div > section > .join-button > a{
+    color: #005c7c;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #fcfcd4;
+    border: #005c7c 1px solid;
+}
+
+main > div > section >.join-button > a:hover {
+    background-color: #005c7c;
+    color: #fcfcd4;
+
+}
+
+/* Games Events styles */
+td {
+    font-family: monospace, sans-serif;
+}
+table {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border: #005c7c 1px solid;
+}
+
+th {
+    font-family: "Press Start 2P", monospace, sans-serif;
+    background-color: #005c7c;
+    color: #fcfcd4;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* List styles */
+li > p > span {
+    font-weight: bold;
+    display: block;
+}
+/* Join Form styles */
+#join-form form {
+    display:flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#join-form > form > input,select {
+    padding: 0.5rem;
+    border: #005c7c 1px solid;
+    border-radius: 10px;
+    font-family: monospace, sans-serif;
+    width: 15rem;
+}
+
+#join-form > form > textarea {
+    padding: 0.5rem;
+    border: #005c7c 1px solid;
+    border-radius: 10px;
+    font-family: monospace, sans-serif;
+    width: 30rem;
+}
+
+#join-form > form > button {
+    padding: 0.5rem;
+    border: #005c7c 1px solid;
+    border-radius: 10px;
+    font-family: monospace, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fcfcd4;
+    color: #005c7c;
+    cursor: pointer;
+    width: 30rem;
+}
+#join-form > form > button:hover {
+    background-color: #005c7c;
+    color: #fcfcd4;
+}
+
+/* Contact Form styles */
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#contact-form form > input {
+    padding: 0.5rem;
+    border: #005c7c 1px solid;
+    border-radius: 10px;
+    font-family: monospace, sans-serif;
+    width: 15rem;
+}
+
+#contact-form form > textarea {
+    padding: 0.5rem;
+    border: #005c7c 1px solid;
+    border-radius: 10px;
+    font-family: monospace, sans-serif;
+    width: 30rem;
+}
+
+#contact-form > form > button {
+    padding: 0.5rem;
+    border: #005c7c 1px solid;
+    border-radius: 10px;
+    font-family: monospace, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fcfcd4;
+    color: #005c7c;
+    cursor: pointer;
+    width: 30rem;
+}
+#contact-form > form > button:hover {
+    background-color: #005c7c;
+    color: #fcfcd4;
+}
+
+#map > iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+.small-button {
+    padding: 0.5rem;
+    border: #005c7c 1px solid;
+    border-radius: 10px;
+    font-family: monospace, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fcfcd4;
+    color: #005c7c;
+    cursor: pointer;
+    width: 10rem;
+    margin-top: 1vh;
+}
+
+/* The Game styles */
+#character-info {
+    display: none;
+}
+
+/* Responsive Design */
+@media (min-width: 900px) {
+    main {
+        margin:0 15% 0 8%;
+    }
+
+    nav {
+        padding: 0 10% 0 10%;
+    }
+
+    .nav-mtu {
+        padding-top: 0.3rem;
+    }
+
+    #contact-main {
+        margin: 1rem;
+    }
+
+    #contact-main {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    #map > iframe {
+        width: 30vw;
+    }
+
+    #contact-details {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-pages {
+        flex-direction: column;
+    }
+
+    #join-form > form > textarea {
+        width: 70vw;
+    }
+
+    #join-form > form > button {
+        width: 70vw;
+    }
+
+    #contact-form > form > textarea {
+        width: 70vw;
+    }
+
+    #contact-form > form > button {
+        width: 70vw;
+    }
+
+    #map > iframe {
+        width: 75vw;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+}
