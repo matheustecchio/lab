@@ -1,6 +1,6 @@
 # Multi-Bill Calculator
 A program that calculates and displays various charges. The charges are across the following 5 areas:
-This project was developed by a collaboration of 4 people, check the [acknowledge](../../docs/ACKNOWLEDGMENTS.md) to see more details.
+This project was developed by a collaboration of 4 people, check the [acknowledge](./ACKNOWLEDGMENTS.md) to see more details.
 - Tax
 - Monthly Pay (Sales)
 - Water Charges
